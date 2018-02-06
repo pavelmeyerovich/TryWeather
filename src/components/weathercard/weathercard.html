@@ -5,7 +5,9 @@
   </ion-card-header>
 
   <ion-card-content>
-    The content, put stuff here
+    <div class="temp main">Temperature: {{data.main.temp | toCelsius}} Cels.</div>
+    <div class="humidity main">Humidity: {{data.main.humidity}}%</div>
+    <div class="pressure main">Pressure: {{data.main.pressure | tommHg}} mmHg</div>
   </ion-card-content>
 
 </ion-card>

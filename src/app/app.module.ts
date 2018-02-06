@@ -15,6 +15,9 @@ import { OpenWeatherMapProvider } from '../providers/openweathermap/openweatherm
 import { ConvertProvider } from '../providers/convert/convert';
 import { ComponentsModule } from '../components/components.module';
 import { WeathercardComponent } from '../components/weathercard/weathercard';
+import { PipesModule } from '../pipes/pipes.module';
+import { ToCelsiusPipe } from '../pipes/to-celsius/to-celsius';
+import { TommHgPipe } from '../pipes/tomm-hg/tomm-hg';
 
 @NgModule({
   declarations: [
@@ -23,11 +26,14 @@ import { WeathercardComponent } from '../components/weathercard/weathercard';
     ContactPage,
     HomePage,
     TabsPage,
-    WeathercardComponent
+    WeathercardComponent/*,
+    ToCelsiusPipe,
+    TommHgPipe */
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    PipesModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

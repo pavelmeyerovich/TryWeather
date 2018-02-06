@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ToCelsiusPipe } from '../../pipes/to-celsius/to-celsius';
+import { TommHgPipe } from '../../pipes/tomm-hg/tomm-hg';
 
 /**
  * Card for displaying main data
